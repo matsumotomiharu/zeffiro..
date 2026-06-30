@@ -1,0 +1,311 @@
+@charset "UTF-8";
+body{
+    line-height: 1.7;
+    font-size: 16px;
+    font-family: "BIZ UDMincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    background-color: #efefef;
+}
+a,
+a:link{
+    color: #3585b7;
+}
+a:visited{
+    color: #6252b7;
+}
+a:hover{
+    text-decoration: none;
+    color: #555;
+}
+@media screen and (max-width:767px){
+    body{
+        font-size: 15px;
+    }
+    img{
+        max-width: 100%;min-height: auto;
+    }
+}
+
+/*header*/
+header{
+    display: flex;
+}
+header h1{
+    margin: 20px 0 0 20px;
+}
+header nav{
+    margin: 0 0 0 auto;
+}
+header nav ul{
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li a,
+header nav ul li a:link,
+header nav ul li a:visited{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+}
+header nav ul li a:hover{
+    color: #888;
+}
+@media screen and (max-width:767px){
+    header{
+        display: block;
+    }
+    header h1{
+        margin: 10px 0 0;
+        text-align: center;
+    }
+    header h1 img{
+        width: 150px;
+    }
+    header nav ul{
+        margin: 0;
+    }
+    header nav ul li{
+        width: 100%;
+    }
+    header nav ul li:last-child{
+        width: 100%;
+    }
+    header nav ul li a,
+    header nav ul li a:link,
+    header nav ul li a:visited{
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+/*footer*/
+footer{
+    background: #000;
+    padding: 20px;
+}
+footer p{
+    margin: 0;
+    text-align: right;
+    color: #fff;
+}
+
+/*main*/
+main .inner{
+    width: 890px;
+    margin: 50px auto;
+}
+main section dl dt{
+     margin: 200px 0 20px;
+    font-size: 35px;
+    color: #192332;
+
+}
+main h2{
+    margin: 50px 0 20px;
+    font-size: 25px;
+}
+main p{
+    margin: 0 0 15px;
+}
+main .title{
+    padding: 50px;
+}
+main .title h1{
+    margin: 0;
+    line-height: 1;
+    font-size: 40px;
+}
+main .title ol{
+    list-style-type: none;
+    margin: 30px 0 0;
+    padding: 0;
+    display: flex;
+}
+main .title ol li{
+    font-size: 13px;
+}
+main .title ol li::after{
+    content: ">";
+    margin: 0 5px 0 10px;
+}
+main .title ol li:last-child::after{
+    content: none;
+}
+/*profile.html*/
+
+main div p img{
+    margin: 100px 20px;
+}
+main div h2{
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    margin: 0 0 30px;
+}
+main table{
+    width: 100%;
+    margin-bottom: 30px;
+    margin: 50px auto;
+    
+}
+main table,
+main table th,
+main table td{
+    border:1px #ccc;
+    border-collapse: collapse;
+}
+main table th,
+main table td{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+main table th{
+    border-right: 1px solid #ccc;
+    color: #000000;
+}
+.V{    
+    text-align: center;
+    padding: 50px ;
+}
+
+
+/*music videos.html*/
+.course-box{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.music_title{
+    font-size: 35px;
+}
+.item{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 150px;
+}
+.archive{    
+    text-align: center;
+    padding: 50px ;
+}
+@media screen and (max-width:767px){
+    main.inner{
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }    
+    main h2{
+        margin: 40px 0 15px;
+
+    }
+    main dl dt{
+        float: none;
+        padding: 0;
+    }
+    main dl dd{
+        margin: 0 0 10px;
+        padding: 10px 0 10px 0;
+    }
+}
+/*aside*/
+aside div{
+    width: 750px;
+}
+/*home*/
+.home main .visual{
+    background: url(img/zeffiro.svg)no-repeat center top;
+    height: 550px;
+    padding: 150px 0 0;
+    box-sizing: border-box;
+}
+.home main .visual p{
+    text-align: center;
+}
+.home main section{
+    display: flex;
+    margin-top: 50px;
+}
+.home main section div{
+    padding: 50px 40px 0 0;
+}
+.home main section:first-child{
+    margin: 100px 120px;
+}
+.home main section:nth-child(2){
+    flex-direction: row-reverse;
+}
+.home main section:nth-child(2) div{
+    padding: 50px 0 0 40px;
+}
+.home aside{
+    text-align: center;
+}
+.home aside div{
+   margin: 100px auto;
+}
+.home form p{
+    text-align: center;
+}
+form dl{
+    margin: 150px auto;
+    width: 990px;
+}
+form dl dt{
+    float: left;
+    padding: 1em;
+    color: #998484;
+}
+form dl dd{
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    padding: 1em 0 1em 18em;
+}
+input{
+    font-size: 1em;
+    padding: 5px;
+}
+textarea{
+    width: 30em;
+    font-size: 1em;
+    padding: 5px;
+}
+p.submit{
+    text-align: center;
+}
+input[type="submit"]{
+    padding: 20px 60px;
+    background: #192332;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    opacity: 0.8;
+}
+@media screen and (max-width:767px){
+    .home main .visual{
+        background-size: cover;
+        height: 200px;
+        padding: 40px 30px 0;
+    }    
+
+    .home main section div,
+    .home main section:first-child div{
+        padding: 0;
+    }
+}
+
+/*course*/
+
+/*price*/
+
+/*access*/ 
+
+/*entry*/
+
+/*sitemap
+display:flex form */
